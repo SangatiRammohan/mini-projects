@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#display{
+    width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+    /* box-shadow: 2px 2px 10px blue; */
+}
+.main{
+    width: 70%;
+    height: auto;
+    background-color: azure;
+    border-radius: 10px;
+    margin: 100px auto 20px;
+    box-shadow: 3px 3px 30px black;
+    padding: 30px;
+}
+.main h1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: rgb(49, 198, 89);
+}
+.main h1 img{
+    width: 40px;
+    margin-left: 10px;
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.bar input{
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+}
+.bar button{
+    outline: none;
+    border: none;
+    background-color: rgb(192, 136, 68);
+    border-radius: 20px;
+    padding: 10px 20px;
+
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px ;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+    background-image: url(../assests/acqL74dzi.png);
+    background-size:contain;
+    background-position: center;
+    left: 3px;
+}
+ul li.litag{
+    color:orangered;
+    text-decoration: line-through;
+}
+ul li.litag::before{
+    background-image: url(../assests/checkbox-icon-png-4.png);
+    font-size: 20px;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    font-size: 37px;
+    margin-left: 20px;
+}
+ul li span:hover{
+    background-color: rgb(179, 173, 173);
+    border-radius: 50%;
+}
